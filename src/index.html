@@ -3,27 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css" id="main-stylesheet">
+        <link rel="stylesheet" href="alternate.css" id="alternate-stylesheet"/>
+        <link rel="stylesheet" href="main.css" id="main-stylesheet"/>
+        
         <title>Cyber Attacks</title>
     </head>
     <body>
         <header>
             <h1>Cyber Attacks</h1>
             <img src="hacking.jpg" alt="Cyber-Attacks">
-            <nav>
-                
+            <nav>               
                     <a href="index.html">Home</a>
-                    <a href="Information_Page.html">Information</a>
                     <a href="https://www.cisa.gov/" target="_blank">CISA</a>
-                    <a href="https://www.nist.gov/" target="_blank">NIST</a>
-                
-            </nav>
+                    <a href="https://www.nist.gov/" target="_blank">NIST</a>                            </nav>
+          
         </header>
         
         <main>
             <h2>Common Attacks</h2>
             <div>
-                <h3>SQL Injection</h3>
+                <h3><u>SQL Injection</u></h3>
                     <p>
                        Many types of injection vulnerabilities are possible within web applications, such as HTTP injection, code injection, and command injection. The most common example, however, is SQL injection. A SQL injection occurs when a malicious user attempts to pass input that changes the final SQL query sent by the web application to the database, enabling the user to perform other unintended SQL queries directly against the database.
 
@@ -33,7 +32,7 @@ Once an attacker can inject, they have to look for a way to execute a different 
 
 <br>A very useful resource for SQL Injection is <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection" target="_blank">PayloadAllTheThings</a><br><br>
 
- <em>The following is a broad overview of the SQL Injection process.</em><br>                     
+ <em>The following is a broad overview of the SQL Injection process:</em><br>                     
 <br> <ol>
     <li><b>Identify the Vulnerable Input:</b> The attacker identifies a web application that has a vulnerability in its input validation or sanitization. Typically, this involves finding user inputs, such as text fields or URL parameters, where the application directly incorporates user-supplied data into SQL queries without proper validation or escaping.</li>
     <li><b>Craft a Malicious Input:</b> The attacker crafts a malicious input that includes SQL code. This input is designed to manipulate the SQL query executed by the application. Common techniques include adding single quotes, double quotes, or SQL keywords to break out of the original query structure.</li>
@@ -46,7 +45,7 @@ Once an attacker can inject, they have to look for a way to execute a different 
                     
             </div>
             <div>
-                <h3>Brute Force</h3>
+                <h3><u>Brute Force</u></h3>
                     
                         <p>
 
@@ -54,7 +53,7 @@ A brute force attack is a hacking method that uses trial and error to crack pass
 
 The name "brute force" comes from attackers using excessively forceful attempts to gain access to user accounts. Despite being an old cyberattack method, brute force attacks are tried and tested and remain a popular tactic with hackers.<br>
 
-                       <br><em>The following is a broad overview of Brute Force Attacks.</em><br>  
+                       <br><em>The following is a broad overview of Brute Force Attacks:</em><br>  
                 <br> <ol>
                 <li><b>Target Selection:</b>The attacker selects a target system, application, or service that they want to gain access to. This could be a website, email account, network server, or any other system that requires authentication.</li>
                 <li><b>Password List Creation:</b>The attacker prepares a list of possible passwords to try during the attack. This list may include common passwords, dictionary words, known patterns, or randomly generated strings. The success of the attack depends on the quality of the password list.</li>
@@ -69,8 +68,10 @@ The name "brute force" comes from attackers using excessively forceful attempts 
                       
             </div>
             <div>
-                <h3>Syn-Flood</h3>
-                    <p>A SYN flood (half-open attack) is a type of denial-of-service (DDoS) attack which aims to make a server unavailable to legitimate traffic by consuming all available server resources. By repeatedly sending initial connection request (SYN) packets, the attacker is able to overwhelm all available ports on a targeted server machine, causing the targeted device to respond to legitimate traffic sluggishly or not at all.
+                <h3><u>Syn-Flood</u></h3>
+                    <p>A SYN flood (half-open attack) is a type of denial-of-service (DDoS) attack which aims to make a server unavailable to legitimate traffic by consuming all available server resources. By repeatedly sending initial connection request (SYN) packets, the attacker is able to overwhelm all available ports on a targeted server machine, causing the targeted device to respond to legitimate traffic sluggishly or not at all.<br>
+
+                      <br><em>The following is a broad overview of Syn-Flood attacks:</em><br>
                     
                     <ol>
     <li><b>Target Selection:</b>Identify the target system or server that you want to disrupt.</li>
@@ -86,8 +87,10 @@ The name "brute force" comes from attackers using excessively forceful attempts 
 
             </div>
             <div>
-                <h3>Ransomware</h3>
-                    <p>Ransomware is a type of malware which prevents you from accessing your device and the data stored on it, usually by encrypting your files. A criminal group will then demand a ransom in exchange for decryption. The computer itself may become locked, or the data on it might be encrypted, stolen or deleted. The attackers may also threaten to leak the data they steal.
+                <h3><u>Ransomware</u></h3>
+                    <p>Ransomware is a type of malware which prevents you from accessing your device and the data stored on it, usually by encrypting your files. A criminal group will then demand a ransom in exchange for decryption. The computer itself may become locked, or the data on it might be encrypted, stolen or deleted. The attackers may also threaten to leak the data they steal.<br>
+
+                      <br><em>The following is a broad overview of ransomware Attacks:</em><br>
                     
      <ol>
     <li><b>Delivery:</b>Ransomware is often delivered through phishing emails, malicious attachments, or compromised websites. Attackers may also use exploit kits to target vulnerabilities in software.</li>
@@ -98,7 +101,7 @@ The name "brute force" comes from attackers using excessively forceful attempts 
 </ol>               
             <img src="WanaCry.png" alt="Ransomware">
     <br>
-    <br> For more data visit <a href="information.html">Click Me</a>
+    <br> <strong>For more data visit <a href="information.html">here.</a></strong>
                     
                     </p>
                   
@@ -109,8 +112,28 @@ The name "brute force" comes from attackers using excessively forceful attempts 
             <p>&copy; <em>2023 Arian Arana, Eyad Ramadan</em></p>
         </footer>
     
-        <button id="style-toggle">Toggle Styles</button>
-        
-    </body>    
+      
+      <button id="style-toggle">Switch Style</button>
+      
+      <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const styleToggle = document.getElementById("style-toggle");
+    const mainStylesheet = document.getElementById("main-stylesheet");
+    
+    styleToggle.addEventListener("click", function () {
+        if (mainStylesheet.getAttribute("href") === "main.css") {
+            mainStylesheet.setAttribute("href", "alternate.css");
+        } else {
+            mainStylesheet.setAttribute("href", "main.css");
+        }
+    });
+  });     
 
-    </html>
+  </script>
+
+</body>
+</html>
+    
+ 
+        
+    
