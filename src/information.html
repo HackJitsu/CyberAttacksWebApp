@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" id="main-stylesheet">
-    <title>Another Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css" id="main-stylesheet">
+  <title>Another Page</title>
 </head>
+
 <body>
-    <header>
-        <h1>Another Page</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="another.html">Another Page</a></li>
-                <li><a href="https://www.example.com" target="_blank">External Link 1</a></li>
-                <li><a href="https://www.example2.com" target="_blank">External Link 2</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h2>Main Content Heading</h2>
-        <article>
-            <h3>Article 3</h3>
-            <p>This is the content of article 3 on another page.</p>
-        </article>
-    </main>
+  <header>
+    <li><a href="index.html">Home</a></li>
+    <h1>Popular Cyber Attacks Preventions</h1>
+    <nav>
+      <ul>
+       <!-- <li><a href="index.html">Home</a></li> -->
+       <!-- <li><a href="another.html">Another Page</a></li> -->
+       <!-- <li><a href="https://www.example.com" target="_blank">External Link 1</a></li> -->
+      <!--  <li><a href="https://www.example2.com" target="_blank">External Link 2</a></li> -->
+      </ul>
+    </nav>
+  </header>
+   <table border="1">
+        <tr>
+            <th>Attack Type</th>
+            <th>Description</th>
+            <th>Prevention</th>
+        </tr>
+        <tr>
+            <td>SQL Injection</td>
+            <td>Attackers inject malicious SQL queries to manipulate a database.</td>
+            <td>Input validation, prepared statements, parameterized queries.</td>
+        </tr>
+        <tr>
+            <td>Brute Force</td>
+            <td>Attackers repeatedly attempt different combinations to guess login credentials.</td>
+            <td>Use strong, complex passwords, account lockout policies.</td>
+        </tr>
+        <tr>
+            <td>Syn-Flood</td>
+            <td>Attackers flood a target server with SYN packets, causing service disruption.</td>
+            <td>Firewalls, rate limiting, SYN cookies.</td>
+        </tr>
+        <tr>
+            <td>Ransomware</td>
+            <td>Malware that encrypts files and demands a ransom for decryption.</td>
+            <td>Regular backups, security software, user education.</td>
+        </tr>
+    </table>
 
-    <footer>
-        <p>&copy; 2023 Arian Arana</p>
-    </footer>
+  <main>
+    <h2>Main Content Heading</h2>
+    <article>
+      <h3>Article 3</h3>
+      <p>This is the content of article 3 on another page.</p>
+    </article>
+  </main>
 
-    <button id="style-toggle">Toggle Styles</button>
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2023 Arian Arana</p>
+  </footer>
+
+  <button id="style-toggle">Toggle Styles</button>
+  <script src="script.js"></script>
 </body>
+
 </html>
