@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css" id="main-stylesheet">
+        <title>Cyber Attacks</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cyber Attacks</h1>
+            <img src="images/cyber-attacks" alt="Cyber-Attacks">
+            <nav>
+                
+                    <a href="index.html">Home</a>
+                    <a href="Information_Page.html">Information</a>
+                    <a href="https://www.cisa.gov/" target="_blank">CISA</a>
+                    <a href="https://www.nist.gov/" target="_blank">NIST</a>
+                
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Common Attacks</h2>
+            <div>
+                <h3>SQL Injection</h3>
+                    <p>
+                       Many types of injection vulnerabilities are possible within web applications, such as HTTP injection, code injection, and command injection. The most common example, however, is SQL injection. A SQL injection occurs when a malicious user attempts to pass input that changes the final SQL query sent by the web application to the database, enabling the user to perform other unintended SQL queries directly against the database.
+
+There are many ways to accomplish this. To get a SQL injection to work, the attacker must first inject SQL code and then subvert the web application logic by changing the original query or executing a completely new one. First, the attacker has to inject code outside the expected user input limits, so it does not get executed as simple user input. In the most , basic casethis is done by injecting a single quote (') or a double quote (") to escape the limits of user input and inject data directly into the SQL query.
+
+Once an attacker can inject, they have to look for a way to execute a different SQL query. This can be done using SQL code to make up a working query that executes both the intended and the new SQL queries. There are many ways to achieve this, like using stacked queries or using Union queries. Finally, to retrieve our new query's output, we have to interpret it or capture it on the web application's front end.<br>
+
+<br>A very useful resource for SQL Injection is <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection" target="_blank">PayloadAllTheThings</a><br><br>
+
+ <em>The following is a broad overview of the SQL Injection process.</em><br>                     
+<br> <ol>
+    <li><b>Identify the Vulnerable Input:</b> The attacker identifies a web application that has a vulnerability in its input validation or sanitization. Typically, this involves finding user inputs, such as text fields or URL parameters, where the application directly incorporates user-supplied data into SQL queries without proper validation or escaping.</li>
+    <li><b>Craft a Malicious Input:</b> The attacker crafts a malicious input that includes SQL code. This input is designed to manipulate the SQL query executed by the application. Common techniques include adding single quotes, double quotes, or SQL keywords to break out of the original query structure.</li>
+    <li><b>Submit the Malicious Input:</b> The attacker submits the crafted input through the vulnerable entry point of the web application. This input is then processed by the application's server-side code, which constructs an SQL query using the user's input.</li>
+  <li><b>Exploit the Vulnerability:</b> If the input is not properly sanitized or validated, the attacker's SQL code is incorporated into the query. This can lead to unauthorized access to the database, data extraction, data modification, or even deletion, depending on the specific SQL injection scenario.</li>
+  <li><b>Retrieve or Manipulate Data:</b> Once the attacker has successfully injected SQL code, they can retrieve sensitive data or manipulate the database. This may involve extracting usernames and passwords, altering records, or performing other malicious actions.</li>
+</ol>
+                    </p> 
+                    <img src="SQL-Inject.jpg" alt="SQL Injection">
+                    
+            </div>
+            <div>
+                <h3>Brute Force</h3>
+                    
+                        <p>
+
+A brute force attack is a hacking method that uses trial and error to crack passwords, login credentials, and encryption keys. It is a simple yet reliable tactic for gaining unauthorized access to individual accounts and organizations’ systems and networks. The hacker tries multiple usernames and passwords, often using a computer to test a wide range of combinations, until they find the correct login information.
+
+The name "brute force" comes from attackers using excessively forceful attempts to gain access to user accounts. Despite being an old cyberattack method, brute force attacks are tried and tested and remain a popular tactic with hackers.<br>
+
+                       <br><em>The following is a broad overview of Brute Force Attacks.</em><br>  
+                <br> <ol>
+                <li><b>Target Selection:</b>The attacker selects a target system, application, or service that they want to gain access to. This could be a website, email account, network server, or any other system that requires authentication.</li>
+                <li><b>Password List Creation:</b>The attacker prepares a list of possible passwords to try during the attack. This list may include common passwords, dictionary words, known patterns, or randomly generated strings. The success of the attack depends on the quality of the password list.</li>
+                <li><b>Username Enumeration:</b>In some cases, the attacker may first attempt to enumerate valid usernames associated with the target system. This can involve using techniques such as username enumeration or identifying valid email addresses.</li>
+                <li><b>Password Guessing:</b>The attacker uses automated software or scripts to systematically try each password from the prepared list in combination with the identified usernames (if applicable). The software sends login attempts to the target system using various combinations until successful authentication is achieved.</li>
+                  <li><b>Login Attempts:</b>The brute force attack generates a large number of login attempts. Depending on the target system's security measures, it may have mechanisms in place to detect and block multiple failed login attempts, slowing down the attack. Attackers may attempt to evade these protections by using proxies or distributed attack methods.</li>
+                  <li><b>Successful Access:</b>If the attacker successfully guesses the correct username and password combination, they gain unauthorized access to the target system or application. Once inside, they may perform malicious actions, such as stealing data, installing malware, or carrying out further attacks.</li>
+            </ol>
+                        </p>
+                      <img src="images/Brute-force.png" alt="Brute-force">
+                      
+                      
+            </div>
+            <div>
+                <h3>Syn-Flood</h3>
+                    <p>A SYN flood (half-open attack) is a type of denial-of-service (DDoS) attack which aims to make a server unavailable to legitimate traffic by consuming all available server resources. By repeatedly sending initial connection request (SYN) packets, the attacker is able to overwhelm all available ports on a targeted server machine, causing the targeted device to respond to legitimate traffic sluggishly or not at all.
+                    
+                    <ol>
+    <li><b>Target Selection:</b>Identify the target system or server that you want to disrupt.</li>
+    <li><b>Open Multiple Connections:</b> Use a tool or script to initiate a large number of TCP connection requests (SYN packets) to the target.</li>
+    <li><b>Incomplete Handshake:</b>Send SYN packets but do not complete the three-way TCP handshake by sending ACK packets in response to the server's SYN-ACK packets.</li>
+    <li><b>Resource Exhaustion:</b>As the target server responds to each SYN packet with a SYN-ACK packet, it reserves resources to establish a connection. With no final ACK packets, these resources gradually become exhausted.</li>
+    <li><b>Denial of Service:</b>As resources are consumed, the target system's ability to respond to legitimate requests is severely impacted, leading to a denial of service (DoS) condition.</li>
+    <li><b>Attack Duration:</b>Sustain the attack for an extended period, overwhelming the target server with a continuous stream of SYN packets.</li>
+</ol>
+                    
+                    
+                    </p>
+            </div>
+
+            </div>
+            <div>
+                <h3>Ransomware</h3>
+                    <p>Ransomware is a type of malware which prevents you from accessing your device and the data stored on it, usually by encrypting your files. A criminal group will then demand a ransom in exchange for decryption. The computer itself may become locked, or the data on it might be encrypted, stolen or deleted. The attackers may also threaten to leak the data they steal.
+                    
+     <ol>
+    <li><b>Delivery:</b>Ransomware is often delivered through phishing emails, malicious attachments, or compromised websites. Attackers may also use exploit kits to target vulnerabilities in software.</li>
+    <li><b>Infection:</b>Once the victim clicks on a malicious link or opens a compromised attachment, the ransomware is executed on their system. It begins encrypting files on the victim's computer and any connected network drives.</li>
+    <li><b>Encryption</b>Ransomware uses strong encryption algorithms to lock the victim's files, making them inaccessible without the decryption key. Typically, the victim receives a ransom note explaining that their files are encrypted and they must pay a ransom to get the decryption key.</li>
+    <li><b>Ransom Note:</b>A ransom note is displayed on the victim's screen, explaining the situation and providing instructions on how to pay the ransom, usually in cryptocurrency like Bitcoin. The note often includes a countdown timer to create a sense of urgency.</li>  
+    <li><b>Payment:</b>If the victim chooses to pay the ransom, they follow the provided instructions to make the payment to the attacker's cryptocurrency wallet. Payment doesn't guarantee that the attacker will provide the decryption key, and some victims never receive it.</li>
+</ol>               
+                    
+                    </p>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; <em>2023 Arian Arana, Eyad Ramadan</em></p>
+        </footer>
+    
+        <button id="style-toggle">Toggle Styles</button>
+        
+    </body>    
+
+    </html>
