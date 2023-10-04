@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="alternate.css" id="alternate-stylesheet"/>
   <link rel="stylesheet" href="main.css" id="main-stylesheet">
   <title>Another Page</title>
 </head>
@@ -11,7 +12,7 @@
 <body>
   <header>
     <li><a href="index.html">Home</a></li>
-    <h1>Popular Cyber Attacks Preventions</h1>
+    <h1><u>Popular Cyber Attacks Preventions</u></h1>
     <nav>
       <ul>
        <!-- <li><a href="index.html">Home</a></li> -->
@@ -50,19 +51,41 @@
     </table>
 
   <main>
-    <h2>Main Content Heading</h2>
+   <!-- <h2>For More Information</h2> -->
     <article>
-      <h3>Article 3</h3>
-      <p>This is the content of article 3 on another page.</p>
+      <h3>Useful tools:</h3>
+      <p>
+        <a href="https://www.virustotal.com/gui/home/upload"target="_blank">VirusTotal</a> <br>
+                                                                                             
+        <a href="https://gchq.github.io/CyberChef/"target="_blank">CyberChef</a> <br>
+
+        <a href="https://www.shodan.io/"target="_blank">Shodan</a>
+      
+      
+      </p>
     </article>
   </main>
 
   <footer>
-    <p>&copy; 2023 Arian Arana</p>
+    <p>&copy; 2023 Arian Arana, Eyad Ramadan</p>
   </footer>
 
   <button id="style-toggle">Toggle Styles</button>
-  <script src="script.js"></script>
+  <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const styleToggle = document.getElementById("style-toggle");
+    const mainStylesheet = document.getElementById("main-stylesheet");
+    
+    styleToggle.addEventListener("click", function () {
+        if (mainStylesheet.getAttribute("href") === "main.css") {
+            mainStylesheet.setAttribute("href", "alternate.css");
+        } else {
+            mainStylesheet.setAttribute("href", "main.css");
+        }
+    });
+  });
+  </script>   
+  
 </body>
 
 </html>
